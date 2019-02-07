@@ -26,7 +26,9 @@
 <!--
     <module>identity</module>
     <module>index</module>
+-->
     <module>interruption</module>
+<!--
     <module>jbrowserdriver</module>
     <module>java8-streams</module>
     <module>jmh</module>
