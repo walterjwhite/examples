@@ -22,6 +22,7 @@
     <module>cli-daemon</module>
 -->
     <module>heartbeat</module>
+    <module>time-constrained</module>
 <!--
     <module>identity</module>
     <module>index</module>
