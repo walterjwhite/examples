@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite</groupId>
+    <artifactId>java</artifactId>
+    <version>0.0.15-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java</groupId>
+  <artifactId>examples</artifactId>
+  <version>0.0.15-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>examples</name>
+  <description>examples</description>
+  <url>https://github.com/walterjwhite/examples</url>
+  <modules>
+<!--
+    <module>cdi</module>
+    <module>cdi-qualifiers-multiple-instances</module>
+    <module>cli-guice-multiple-implementations</module>
+    <module>cli</module>
+    <module>cli-daemon</module>
+-->
+    <module>heartbeat</module>
+<!--
+    <module>identity</module>
+    <module>index</module>
+    <module>interruption</module>
+    <module>jbrowserdriver</module>
+    <module>java8-streams</module>
+    <module>jmh</module>
+    <module>metrics-capturing</module>
+    <module>practice</module>
+    <module>ssh</module>
+    <module>tensorflow</module>
+    <module>enum-persistence</module>
+    <module>queue</module>
+    <module>startup-shutdown-aware</module>
+-->
+    <!--<module>vaadin</module>-->
+    <!--<module>querydsl</module>-->
+  </modules>
+  <scm>
+    <connection>scm:git:ssh://git@localhost:/projects/active/github.com/java/modules/examples.git</connection>
+    <developerConnection>scm:git:ssh://git@localhost:/projects/active/github.com/java/modules/examples.git</developerConnection>
+    <url>https://github.com/walterjwhite/examples.git</url>
+  </scm>
+</project>
