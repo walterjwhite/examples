@@ -12,57 +12,10 @@
   <name>examples - interruption</name>
   <dependencies>
     <dependency>
-      <groupId>com.walterjwhite.java.dependencies</groupId>
-      <artifactId>slf4j-simple</artifactId>
+      <groupId>com.walterjwhite.java.configuration.cli</groupId>
+      <artifactId>guice</artifactId>
       <version>0.0.15-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
   </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.1</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <artifactSet>
-                <excludes>
-                  <exclude>org.bouncycastle:bcprov-jdk15on</exclude>
-                  <exclude>org.bouncycastle:bcpkix-jdk15on</exclude>
-                  <exclude>org.bouncycastle:bcprov-ext-jdk14</exclude>
-                </excludes>
-              </artifactSet>
-              <filters>
-                <filter>
-                  <artifact>*:*</artifact>
-                  <excludes>
-                    <exclude>META-INF/*.SF</exclude>
-                    <exclude>META-INF/*.DSA</exclude>
-                    <exclude>META-INF/*.RSA</exclude>
-                  </excludes>
-                </filter>
-              </filters>
-              <shadedArtifactAttached>true</shadedArtifactAttached>
-              <shadedClassifierName>shaded</shadedClassifierName>
-              <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <manifestEntries>
-                    <Class-Path>bcprov-jdk15on.jar bcpkix-jdk15on.jar bcprov-ext-jdk14.jar</Class-Path>
-                    <Main-Class>com.walterjwhite.examples.interruption.InterruptableApplicationExample</Main-Class>
-                  </manifestEntries>
-                </transformer>
-              </transformers>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>

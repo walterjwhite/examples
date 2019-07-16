@@ -1,0 +1,11 @@
+Goals:
+1. show a possible implementation using datanucleus as the backend storage provider
+
+Notes:
+1. this no longer works as it requires the underlying "datastore" infrastructure project to be providing JDO, which it no longer is
+2. implementing both JDO and JPA specs requires a fair bit of effort, unfortunately, JPA is more widely adopted even though JDO provides more features, works with more 
+databases, etc.
+3. this project was meant to show what would happen when you audit an entity
+	in JPA, Hibernate will throw an exception if you try to modify an entity (through a JPA Event Listener);
+	in JDO, the spec basically just says, use commmon sense, don't shoot yourself in the foot and as the example here shows,
+		you can easily audit entities if you so choose as long as you're careful

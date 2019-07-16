@@ -1,0 +1,7 @@
+non-working demo
+
+Goals:
+1. illustrate use of CDI application on the command-line
+
+NOTES:
+1. code seems old because there should be an inject project which provides this facility / abstractions so we don't need to do it here

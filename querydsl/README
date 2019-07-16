@@ -1,0 +1,7 @@
+Goals:
+1. test amount of effort to use querydsl (including syntax, boilerplate code, etc.)
+2. gauge performance of this versus JPA, JDBC, Criteria API, etc.
+
+Notes:
+1. this used to work; however, it depends on querydsl building blocks which I believe I disabled
+2. if I remember correctly, the criteria API was the fastest, but most verbose, querydsl was on-part with JPA speed

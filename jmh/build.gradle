@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.examples'
+description = 'examples - jmh'
+dependencies {
+  compile project(':infrastructure:dependencies:microbenchmark-harness')
+}

@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.examples'
+description = 'examples - java8-streams'
+dependencies {
+  compile project(':infrastructure:dependencies:rxjava')
+}

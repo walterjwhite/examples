@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
+  <persistence-unit name="Primary">
+    <!--<class>org.datanucleus.samples.metadata.store.Product</class>-->
+    <!--<class>org.datanucleus.samples.metadata.store.Book</class>-->
+    <!--<class>org.datanucleus.samples.metadata.store.CompactDisc</class>-->
+    <!--<class>org.datanucleus.samples.metadata.store.Customer</class>-->
+    <!--<class>org.datanucleus.samples.metadata.store.Supplier</class>-->
+    <!--<exclude-unlisted-classes/>-->
+    <properties>
+      <!--<property name="datanucleus.autoCreateSchema" value="true"/>-->
+      <!--<property name="datanucleus.ConnectionDriverName" value="org.h2.Driver"/>-->
+      <property name="javax.jdo.option.ConnectionURL" value="jdbc:h2:./db;DB_CLOSE_ON_EXIT=FALSE"/>
+      <property name="javax.jdo.option.ConnectionUserName" value="sa"/>
+      <property name="javax.jdo.option.ConnectionPassword" value=""/>
+      <property name="datanucleus.schema.autoCreateAll" value="true"/>
+      <property name="datanucleus.validation.mode" value="auto"/>
+    </properties>
+  </persistence-unit>
+</persistence>

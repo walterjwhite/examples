@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export com_walterjwhite_modules_web_service_core_property_WebServerPort=8000
+java -jar target/sample-0.0.15-SNAPSHOT-shaded.jar
+

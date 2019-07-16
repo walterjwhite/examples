@@ -12,41 +12,10 @@
   <name>examples - time-constrained</name>
   <dependencies>
     <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.inject.providers</groupId>
+      <groupId>com.walterjwhite.java.configuration.cli</groupId>
       <artifactId>guice</artifactId>
-      <!--<artifactId>guice-test</artifactId>-->
-      <version>0.0.15-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.inject.modules.cli</groupId>
-      <artifactId>api</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.dependencies</groupId>
-      <artifactId>slf4j-simple</artifactId>
       <version>0.0.15-SNAPSHOT</version>
       <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
-      <artifactId>default</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
-      <artifactId>properties</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
-      <artifactId>environment</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
-      <artifactId>system</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <properties>

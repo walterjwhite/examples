@@ -1,0 +1,12 @@
+Goals:
+1. show how to persist a Java class / enum to an entity as a field / member
+   a. this was meant to be part of a workflow project where the steps are constrained to a particular workflow
+   b. additionally, this was meant to show how it could be used for job execution
+2. show that storing entities in separate repositories means the data is isolated
+   a. multiple tenants
+   b. replaying transactions from another node?
+
+Notes:
+1. this no longer works most likely because I removed @Primary and @Secondary support (again, that was to get around JPA restrictions where when I save an entity, I want to 
+trigger a bunch of jobs downstream (in repository B))
+

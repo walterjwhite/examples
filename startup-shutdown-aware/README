@@ -1,0 +1,8 @@
+Goals:
+1. show how startup / shutdown aware work
+
+Notes:
+1. this partially works, startup aware works fine
+2. shutdown aware did not, but I suspect it is because interruptable is not properly configured and thus shutdown aware would never be run
+3. make sure shutdown aware cannot be misconfigured as in this case
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/bin/run -IVFilePath $_IV_PATH -KeyFilePath $_KEY_PATH

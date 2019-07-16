@@ -14,21 +14,16 @@
   <description>examples</description>
   <url>https://github.com/walterjwhite/examples</url>
   <modules>
-<!--
     <module>cdi</module>
     <module>cdi-qualifiers-multiple-instances</module>
     <module>cli-guice-multiple-implementations</module>
     <module>cli</module>
     <module>cli-daemon</module>
--->
+    <!--    <module>datanucleus</module>-->
     <module>heartbeat</module>
-    <module>time-constrained</module>
-<!--
     <module>identity</module>
     <module>index</module>
--->
     <module>interruption</module>
-<!--
     <module>jbrowserdriver</module>
     <module>java8-streams</module>
     <module>jmh</module>
@@ -36,12 +31,13 @@
     <module>practice</module>
     <module>ssh</module>
     <module>tensorflow</module>
+    <module>time-constrained</module>
     <module>enum-persistence</module>
     <module>queue</module>
     <module>startup-shutdown-aware</module>
--->
     <!--<module>vaadin</module>-->
     <!--<module>querydsl</module>-->
+    <module>serialization</module>
   </modules>
   <scm>
     <connection>scm:git:ssh://git@localhost:/projects/active/github.com/java/modules/examples.git</connection>

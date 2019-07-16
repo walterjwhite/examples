@@ -18,8 +18,7 @@ public class InterruptableApplicationExample implements Interruptable {
     futures.add(interruptableServiceExample.run(new InterruptableTaskExample(10)));
     // final Future f = interruptableServiceExample.run(new InterruptableProcessTaskExample());
 
-    futures
-        .stream()
+    futures.stream()
         .forEach(
             f -> {
               try {
