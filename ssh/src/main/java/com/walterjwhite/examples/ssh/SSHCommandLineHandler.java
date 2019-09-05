@@ -28,6 +28,8 @@ public class SSHCommandLineHandler extends AbstractCommandLineHandler {
   protected void doRun(String... arguments) throws Exception {
     sshCommandService.execute(
         new SSHCommand(
-            new SSHHost("localhost"), new SSHUser(exampleSSHUsername), new ShellCommand().withCommandLine("ls")));
+            new SSHHost("localhost"),
+            new SSHUser(exampleSSHUsername),
+            new ShellCommand().withCommandLine("ls")));
   }
 }

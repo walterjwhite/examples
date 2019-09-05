@@ -9,7 +9,6 @@ import com.walterjwhite.property.impl.annotation.Property;
 import com.walterjwhite.serialization.api.service.SerializationService;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.HashSet;
 import java.util.Set;
@@ -54,9 +53,8 @@ public class SerializationExampleCommandLineHandler extends AbstractCommandLineH
 
   protected void testRead() throws Exception {
     EmailMatcherRule deserializedEmailMatcherRule =
-            (EmailMatcherRule)
-                    serializationService.deserialize(
-                            new FileInputStream("/tmp/test"), EmailMatcherRule.class);
+            serializationService.deserialize(
+                new FileInputStream("/tmp/test"), EmailMatcherRule.class);
     System.out.println("deserialized:\n" + deserializedEmailMatcherRule);
   }
 }

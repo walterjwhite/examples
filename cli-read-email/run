@@ -1,0 +1,19 @@
+#!/bin/bash
+
+_IV_PATH=$(cat ./iv.file.path.secret)
+_KEY_PATH=$(cat ./key.file.path.secret)
+_EMAIL_RULE_PATH=./email-rules
+_EMAIL_RULE_EXTENSION=.yaml
+_EMAIL_ACCOUNT_EXTENSION=.yaml
+_CLEANUP_TYPE=Both
+#_CLEANUP_TYPE=SinglePass
+_RUN_AS=$(cat ./run.as.secret)
+
+$_RUN_AS "java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 \
+ -jar $(find target -type f | grep \\.jar$ | grep cli-read-gmail | grep -Pv "(sources|javadoc)") \
+ -IVFilePath $_IV_PATH -KeyFilePath $_KEY_PATH\
+ -EmailRulePath $_EMAIL_RULE_PATH -EmailRuleExtension $_EMAIL_RULE_EXTENSION\
+ -EmailOrganizationSessionConfigurationDirectory $_EMAIL_RULE_PATH\
+ -EmailAccountExtension $_EMAIL_ACCOUNT_EXTENSION \
+ -CleanupType $_CLEANUP_TYPE" \
+  2> log

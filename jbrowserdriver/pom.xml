@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.walterjwhite.java</groupId>
     <artifactId>examples</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.examples</groupId>
   <artifactId>jbrowserdriver</artifactId>
@@ -14,19 +14,19 @@
     <dependency>
       <groupId>com.walterjwhite.java.dependencies</groupId>
       <artifactId>jbrowserdriver</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.dependencies</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.dependencies</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
   </dependencies>

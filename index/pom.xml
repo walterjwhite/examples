@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.walterjwhite.java</groupId>
     <artifactId>examples</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.examples</groupId>
   <artifactId>index</artifactId>
@@ -14,29 +14,29 @@
     <dependency>
       <groupId>com.walterjwhite.java.configuration.cli</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.configuration</groupId>
       <artifactId>jpa</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.serialization.modules.jackson-databind.providers</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.infrastructure.datastore.providers.jpa.providers</groupId>
       <artifactId>google-guice-persist</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.dependencies</groupId>
       <artifactId>h2</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <!--<dependency>-->
@@ -48,18 +48,18 @@
     <dependency>
       <groupId>com.walterjwhite.java.dependencies</groupId>
       <artifactId>p6spy</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.encryption.providers</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.index.providers.elasticsearch.providers</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

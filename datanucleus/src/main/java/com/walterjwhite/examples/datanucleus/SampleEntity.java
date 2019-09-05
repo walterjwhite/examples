@@ -4,6 +4,7 @@ import javax.jdo.annotations.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 // import javax.validation.constraints.NotNull;
 
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@ToString(doNotUseGetters = true)
 @PersistenceCapable
 public class SampleEntity {
   @PrimaryKey

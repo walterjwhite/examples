@@ -39,8 +39,8 @@ public class TensorFlowExample {
     //            printUsage(System.err);
     //            System.exit(1);
     //        }
-    String modelDir = "/home/w/Downloads"; // args[0];
-    String imageFile = "/home/w/Downloads/1.jpg";
+    String modelDir = "~/Downloads"; // args[0];
+    String imageFile = "~/Downloads/1.jpg";
 
     byte[] graphDef = readAllBytesOrExit(Paths.get(modelDir, "tensorflow_inception_graph.pb"));
     List<String> labels =

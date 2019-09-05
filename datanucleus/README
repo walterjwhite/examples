@@ -9,3 +9,4 @@ databases, etc.
 	in JPA, Hibernate will throw an exception if you try to modify an entity (through a JPA Event Listener);
 	in JDO, the spec basically just says, use commmon sense, don't shoot yourself in the foot and as the example here shows,
 		you can easily audit entities if you so choose as long as you're careful
+4. it also shows the query API which is similar to the criteria API

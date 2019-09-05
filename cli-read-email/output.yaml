@@ -1,0 +1,6 @@
+!!com.walterjwhite.email.organization.api.configuration.rule.EmailMatcherRule
+rule: !!com.walterjwhite.email.organization.api.configuration.rule.GroupRule {}
+version: 0
+actionClasses:
+- {}
+ordering: 0

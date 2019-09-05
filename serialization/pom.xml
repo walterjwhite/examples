@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.walterjwhite.java</groupId>
     <artifactId>examples</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.examples</groupId>
   <artifactId>serialization</artifactId>
@@ -14,23 +14,23 @@
     <dependency>
       <groupId>com.walterjwhite.java.configuration.cli</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.serialization.api</groupId>
       <artifactId>service</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.serialization.modules.snakeyaml.providers</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.email.modules.organization</groupId>
       <artifactId>api</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <properties>

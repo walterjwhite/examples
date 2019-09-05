@@ -23,7 +23,7 @@ public class Test {
     // TODO: do NOT hard-code this, we can inject these properties
     builder.javaOptions(
         "-classpath",
-        "/home/w/.m2/repository/com/machinepublishers/jbrowserdriver/1.0.0-RC1/jbrowserdriver-1.0.0-RC1-uberjar.jar");
+        "~/.m2/repository/com/machinepublishers/jbrowserdriver/1.0.0-RC1/jbrowserdriver-1.0.0-RC1-uberjar.jar");
     builder.timezone(Timezone.AMERICA_NEWYORK);
     builder.ssl("trustanything");
 

@@ -1,4 +1,4 @@
-package com.walterjwhite.examples.daemon;
+package com.walterjwhite.examples.cli.daemon;
 
 import com.walterjwhite.inject.cli.property.CommandLineHandlerShutdownTimeout;
 import com.walterjwhite.inject.cli.service.AbstractDaemonCommandLineHandler;

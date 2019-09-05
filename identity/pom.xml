@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.walterjwhite.java</groupId>
     <artifactId>examples</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.examples</groupId>
   <artifactId>identity</artifactId>
@@ -14,23 +14,23 @@
     <dependency>
       <groupId>com.walterjwhite.java.configuration.cli</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.infrastructure.datastore.api</groupId>
       <artifactId>repository</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.identity.api</groupId>
       <artifactId>model</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.encryption.providers</groupId>
       <artifactId>guice</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <profiles>
@@ -43,7 +43,7 @@
         <dependency>
           <groupId>com.walterjwhite.java.dependencies</groupId>
           <artifactId>h2</artifactId>
-          <version>0.0.15-SNAPSHOT</version>
+          <version>0.0.17-SNAPSHOT</version>
           <type>pom</type>
         </dependency>
       </dependencies>
@@ -64,7 +64,7 @@
         <dependency>
           <groupId>com.walterjwhite.java.configuration</groupId>
           <artifactId>jpa</artifactId>
-          <version>0.0.15-SNAPSHOT</version>
+          <version>0.0.17-SNAPSHOT</version>
           <type>pom</type>
         </dependency>
       </dependencies>
@@ -75,7 +75,7 @@
         <dependency>
           <groupId>com.walterjwhite.java.infrastructure.datastore.providers.jdo.providers</groupId>
           <artifactId>guice</artifactId>
-          <version>0.0.15-SNAPSHOT</version>
+          <version>0.0.17-SNAPSHOT</version>
         </dependency>
       </dependencies>
     </profile>
