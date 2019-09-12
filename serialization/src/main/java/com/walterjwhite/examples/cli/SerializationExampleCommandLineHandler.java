@@ -53,8 +53,7 @@ public class SerializationExampleCommandLineHandler extends AbstractCommandLineH
 
   protected void testRead() throws Exception {
     EmailMatcherRule deserializedEmailMatcherRule =
-            serializationService.deserialize(
-                new FileInputStream("/tmp/test"), EmailMatcherRule.class);
+        serializationService.deserialize(new FileInputStream("/tmp/test"), EmailMatcherRule.class);
     System.out.println("deserialized:\n" + deserializedEmailMatcherRule);
   }
 }
