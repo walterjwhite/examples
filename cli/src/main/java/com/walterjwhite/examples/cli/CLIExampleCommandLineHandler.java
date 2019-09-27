@@ -1,5 +1,8 @@
 package com.walterjwhite.examples.cli;
 
+import com.google.inject.Binding;
+import com.google.inject.Injector;
+import com.walterjwhite.inject.cli.CLIApplicationHelper;
 import com.walterjwhite.inject.cli.property.CommandLineHandlerShutdownTimeout;
 import com.walterjwhite.inject.cli.service.AbstractCommandLineHandler;
 import com.walterjwhite.property.api.enumeration.SystemProxy;
@@ -37,6 +40,13 @@ public class CLIExampleCommandLineHandler extends AbstractCommandLineHandler {
 
     // System.out.println("ChronoUnit from String:" + ChronoUnit.valueOf("Seconds"));
     System.out.println("ChronoUnit from String:" + ChronoUnit.valueOf("SECONDS"));
+
+    for (Binding<?> binding :
+        ((Injector) CLIApplicationHelper.getCommandLineApplicationInstance().getInjector())
+            .getBindings()
+            .values()) {
+      System.out.println(binding);
+    }
 
     Arrays.stream(arguments)
         .forEach(argument -> System.out.println("cli arguments: argument:" + argument));

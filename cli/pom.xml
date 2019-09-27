@@ -17,6 +17,23 @@
       <version>0.0.17-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.property</groupId>
+      <artifactId>validation</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <!--    <dependency>-->
+    <!--      <groupId>com.walterjwhite.java.dependencies</groupId>-->
+    <!--      <artifactId>slf4j-api</artifactId>-->
+    <!--      <version>0.0.17-SNAPSHOT</version>-->
+    <!--      <type>pom</type>-->
+    <!--    </dependency>-->
+    <!--    <dependency>-->
+    <!--      <groupId>org.slf4j</groupId>-->
+    <!--      <artifactId>slf4j-spi</artifactId>-->
+    <!--      <version>1.7.25</version>-->
+    <!--    </dependency>-->
   </dependencies>
   <properties>
     <application.environment>Development</application.environment>
