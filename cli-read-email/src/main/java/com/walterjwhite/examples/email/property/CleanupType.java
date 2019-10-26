@@ -6,10 +6,9 @@ import com.walterjwhite.email.modules.javamail.service.JavaMailFolderEmailSuppli
 import com.walterjwhite.email.modules.javamail.service.JavaMailNewEmailSupplier;
 import com.walterjwhite.email.organization.EmailOrganizer;
 import com.walterjwhite.email.organization.api.configuration.rule.EmailMatcherRule;
+import com.walterjwhite.infrastructure.inject.core.enumeration.ProviderType;
 import com.walterjwhite.property.api.annotation.DefaultValue;
 import com.walterjwhite.property.api.property.ConfigurableProperty;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import java.util.function.Supplier;
 import lombok.Getter;
@@ -47,15 +46,6 @@ public enum CleanupType implements ConfigurableProperty {
       final Class<? extends Supplier<Email>> emailSupplierClass,
       final PrivateEmailAccount emailAccount,
       final String folderName) {
-    try {
-      final Constructor emailConstructor =
-          emailSupplierClass.getConstructor(PrivateEmailAccount.class, String.class);
-      return (Supplier<Email>) emailConstructor.newInstance(emailAccount, folderName);
-    } catch (NoSuchMethodException
-        | InstantiationException
-        | IllegalAccessException
-        | InvocationTargetException e) {
-      throw new Error("Application is mis-configured, unable to get email supplier:", e);
-    }
+    return ProviderType.Self.get(emailSupplierClass, emailAccount, folderName);
   }
 }

@@ -23,7 +23,7 @@
     <!--    <module>datanucleus</module>-->
     <module>heartbeat</module>
     <module>identity</module>
-    <module>index</module>
+    <!--    <module>index</module>-->
     <module>interruption</module>
     <module>jbrowserdriver</module>
     <module>java8-streams</module>
