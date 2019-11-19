@@ -21,8 +21,8 @@ public class CLIExampleCommandLineHandler extends AbstractCommandLineHandler {
   @Inject
   public CLIExampleCommandLineHandler(
       @Property(CommandLineHandlerShutdownTimeout.class) int shutdownTimeoutInSeconds,
-      @Property(ProxyHost.class) Optional<String> proxyHost,
-      @Property(ProxyPort.class) Optional<Integer> proxyPort) {
+      @Property(ProxyHost.class) Optional proxyHost,
+      @Property(ProxyPort.class) Optional proxyPort) {
     super(shutdownTimeoutInSeconds);
     this.proxyHost = proxyHost;
     this.proxyPort = proxyPort;
@@ -37,8 +37,16 @@ public class CLIExampleCommandLineHandler extends AbstractCommandLineHandler {
             + System.getProperty(
                 SystemProxy.HttpProxy.getClass().getName() + "." + SystemProxy.HttpProxy.name()));
 
-    if (proxyHost.isPresent()) System.out.println("HttpProxy: host:" + proxyHost.get());
-    if (proxyPort.isPresent()) System.out.println("HttpProxy: port:" + proxyPort.get());
+    if (proxyHost.isPresent()) {
+      System.out.println("HttpProxy: host:" + proxyHost.get());
+    } else {
+      System.out.println("No proxy detected (host).");
+    }
+    if (proxyPort.isPresent()) {
+      System.out.println("HttpProxy: port:" + proxyPort.get());
+    } else {
+      System.out.println("No proxy detected (port).");
+    }
 
     // System.out.println("ChronoUnit from String:" + ChronoUnit.valueOf("Seconds"));
     System.out.println("ChronoUnit from String:" + ChronoUnit.valueOf("SECONDS"));

@@ -19,7 +19,6 @@
     <module>cli-guice-multiple-implementations</module>
     <module>cli</module>
     <module>cli-daemon</module>
-    <module>cli-read-email</module>
     <!--    <module>datanucleus</module>-->
     <module>heartbeat</module>
     <module>identity</module>

@@ -34,6 +34,8 @@ public class HeartbeatExampleCommandLineHandler extends AbstractCommandLineHandl
     }
   }
 
+  // test if non-loggable annotation works, yes
+  // @NonLoggable
   @Override
   public void onHeartbeat() {
     System.out.println("heartbeat - " + LocalDateTime.now() + ":" + i);
