@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java</groupId>
+    <artifactId>examples</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.examples</groupId>
+  <artifactId>cli-jbrowserdriver</artifactId>
+  <packaging>jar</packaging>
+  <name>examples - cli - jbrowserdriver</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.configuration.cli</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser.api</groupId>
+      <artifactId>service</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser.modules.jbrowserdriver.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <!--      <scope>runtime</scope>-->
+    </dependency>
+    <!-- JavaFX is no longer included in JDK11+ -->
+    <!-- TODO: move this out into dependencies -->
+    <!-- TODO: install openjfx -->
+    <!--    <dependency>-->
+    <!--      <groupId>org.openjfx</groupId>-->
+    <!--      <artifactId>javafx</artifactId>-->
+    <!--      <version>14-ea+2</version>-->
+    <!--      <type>pom</type>-->
+    <!--    </dependency>-->
+  </dependencies>
+  <properties>
+    <application.environment>Development</application.environment>
+  </properties>
+</project>

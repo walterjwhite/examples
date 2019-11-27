@@ -19,6 +19,7 @@
     <module>cli-guice-multiple-implementations</module>
     <module>cli</module>
     <module>cli-daemon</module>
+    <module>cli-jbrowserdriver</module>
     <!--    <module>datanucleus</module>-->
     <module>heartbeat</module>
     <module>identity</module>
